@@ -15,6 +15,7 @@ class ListingsController < ApplicationController
 
   # POST /listings
   def create
+    
     @listing = Listing.new(listing_params)
 
     if @listing.save
